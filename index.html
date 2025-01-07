@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Shams Rza - Web & App Developer</title>
+  <meta name="title" content="Shams Rza - Web & App Developer">
+  <meta name="description" content="This is a personal portfolio">
+
+  <!-- 
+    - favicon
+  -->
+  <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/svg+xml">
+
+
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://rawgit.com/bastienrobert/carousel/master/dist/style.css">
+
+  <!-- <link rel="stylesheet" href="./assets/css/carousel.css"> -->
+  
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+  
+
+</head>
+
+<body>
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <div class="circle"></div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container" style="padding:0">
+
+      <a href="#" class="logo" style="margin-left:-10px; padding:0">
+        <!-- <img src="./assets/images/logo.svg" width="170" height="40" alt="Pfolio home"> -->
+        <img src="./assets/images/logo.png" width="70" height="40" alt="logo">
+      </a>
+
+      <!-- <div class="hamburger"> -->
+        <button class="nav-toggle-btn" data-nav-toggler data-nav-toggle-btn aria-label="Toggle menu">
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+        </button>
+  
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+  
+            <li>
+              <a href="#home" class="navbar-link">Home</a>
+            </li>
+  
+            <li>
+              <a href="#skills" class="navbar-link">Skills</a>
+            </li>
+  
+            <!-- <li>
+              <a href="#" class="navbar-link">Services</a>
+            </li> -->
+  
+            <li>
+              <a href="#portfolio" class="navbar-link">Portfolio</a>
+            </li>
+  
+            <!-- <li>
+              <a href="#" class="navbar-link">Blog</a>
+            </li> -->
+  
+            <li>
+              <a href="#footer" class="navbar-link">Contact</a>
+            </li>
+  
+          </ul>
+        </nav>
+      <!-- </div> -->
+
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" aria-label="home" id="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Shams Rza</h1>
+
+            <p class="hero-subtitle">
+              Creative Web & App Developer
+            </p>
+
+            <div class="hero-banner">
+              <img src="./assets/images/hero-banner.png" width="800" height="800" alt="shams Rza" class="w-100">
+            </div>
+
+            <p class="section-text">
+              Hi, I’m shams rza, a creative web and app developer with a passion for making the world a better place through
+              captivating and impactful digital experiences.
+            </p>
+
+            <a href="/shams-rzayeva-resume.pdf" class="btn has-before" download>
+              <span class="span">Download CV</span>
+
+              <ion-icon name="download-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <!-- <section class="service" aria-labelledby="service-label">
+        <div class="container">
+
+          <div class="title-wrapper">
+
+            <div>
+              <p class="section-subtitle">
+                Services That I Provide
+              </p>
+
+              <h2 class="h2 section-title" id="service-label">Services</h2>
+            </div>
+
+            <p class="section-text">
+              Phasellus et lacus suscipit congue nisl the volutpat magna. donec miss the drana risus tincidunt convallis
+              velit orci congue tortor eu dignissim ipsum suam non odio. Pellenta esuntion miss the imperdiet metus
+              ornare.
+            </p>
+
+          </div>
+
+          <div class="slider" data-slider>
+
+            <ul class="slider-container service-list" data-slider-container>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="desktop-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Website Design</h3>
+
+                  <p class="card-text">
+                    Website ravida surna eveti semen the conse tusio anivite dianne one nivam acestion vue artin dictum.
+                  </p>
+
+                  <span class="text-lg card-number">01</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my website design service"></a>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="podium-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">SEO Marketing</h3>
+
+                  <p class="card-text">
+                    Website ravida surna eveti semen the conse tusio anivite dianne one nivam acestion vue artin dictum.
+                  </p>
+
+                  <span class="text-lg card-number">02</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my SEO Marketing service"></a>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="basket-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">eCommerce</h3>
+
+                  <p class="card-text">
+                    Website ravida surna eveti semen the conse tusio anivite dianne one nivam acestion vue artin dictum.
+                  </p>
+
+                  <span class="text-lg card-number">03</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my eCommerce service"></a>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="color-filter-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Graphic Design</h3>
+
+                  <p class="card-text">
+                    Website ravida surna eveti semen the conse tusio anivite dianne one nivam acestion vue artin dictum.
+                  </p>
+
+                  <span class="text-lg card-number">04</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my Graphic Design service"></a>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="megaphone-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Digital Marketing</h3>
+
+                  <p class="card-text">
+                    Website ravida surna eveti semen the conse tusio anivite dianne one nivam acestion vue artin dictum.
+                  </p>
+
+                  <span class="text-lg card-number">05</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my Digital Marketing service"></a>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="chatbubbles-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Social Media</h3>
+
+                  <p class="card-text">
+                    Website ravida surna eveti semen the conse tusio anivite dianne one nivam acestion vue artin dictum.
+                  </p>
+
+                  <span class="text-lg card-number">06</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my Social Media service"></a>
+
+                </div>
+              </li>
+
+            </ul>
+
+            <div class="slider-controls">
+              <button class="slider-control prev" data-slider-prev aria-label="Slide to previous item">
+                <div class="line"></div>
+                <div class="arrow"></div>
+              </button>
+
+              <button class="slider-control next" data-slider-next aria-label="Slide to next item">
+                <div class="line"></div>
+                <div class="arrow"></div>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </section> -->
+
+
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section class="section skills" aria-label="our skills" id="skills">
+        <div class="container">
+
+          <p class="section-subtitle">I Make The Future</p>
+
+          <h2 class="h2 section-title">I Develop & Create Digital Future.</h2>
+
+          <div class="skills-wrapper">
+
+            <div>
+              <p class="section-text">
+                Creative and detail-oriented Frontend Developer with over 3 years of experience specializing in React-based frontend development.
+              </p>
+
+              <p class="section-text">
+                Proficient in building dynamic, user-friendly web applications and interfaces. Skilled in collaborating with design and
+                development teams to convert wireframes and mockups into functional UI components.
+              </p>
+
+              <p class="section-text">
+                Strong experience in JavaScript/TypeScript, CSS, and responsive design, with a passion for delivering high-quality user experiences. Adept at
+                problem- solving, improving code quality, and driving continuous innovation in fast-paced environments.
+              </p>
+              <a href="mailto:rzsams@hotmail.com" class="btn has-before">rzsams@hotmail.com</a>
+            </div>
+
+            <div class="skills-list-div" >
+
+              <ul class="skills-list">
+
+                <li>
+                  <div class="progress-wrapper">
+                    <p class="progress-label">JavaScript</p>
+
+                    <data class="progress-value" value="80">80%</data>
+                  </div>
+
+                  <div class="progress-bg">
+                    <div class="progress" style="width: 80%;"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="progress-wrapper">
+                    <p class="progress-label">Typescript</p>
+
+                    <data class="progress-value" value="65">65%</data>
+                  </div>
+
+                  <div class="progress-bg">
+                    <div class="progress" style="width: 65%;"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="progress-wrapper">
+                    <p class="progress-label">HTML</p>
+
+                    <data class="progress-value" value="80">80%</data>
+                  </div>
+
+                  <div class="progress-bg">
+                    <div class="progress" style="width: 80%;"></div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="progress-wrapper">
+                    <p class="progress-label">CSS, SASS</p>
+
+                    <data class="progress-value" value="80">80%</data>
+                  </div>
+
+                  <div class="progress-bg">
+                    <div class="progress" style="width: 80%;"></div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="progress-wrapper">
+                    <p class="progress-label">React</p>
+
+                    <data class="progress-value" value="70">70%</data>
+                  </div>
+
+                  <div class="progress-bg">
+                    <div class="progress" style="width: 70%;"></div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="progress-wrapper">
+                    <p class="progress-label">Tailwind, Material UI</p>
+
+                    <data class="progress-value" value="70">70%</data>
+                  </div>
+
+                  <div class="progress-bg">
+                    <div class="progress" style="width: 70%;"></div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="skills-list">
+
+                <li>
+                  <div class="progress-wrapper">
+                    <p class="progress-label">Node.js</p>
+
+                    <data class="progress-value" value="50">50%</data>
+                  </div>
+
+                  <div class="progress-bg">
+                    <div class="progress" style="width: 50%;"></div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="progress-wrapper">
+                    <p class="progress-label">Python</p>
+
+                    <data class="progress-value" value="45">45%</data>
+                  </div>
+
+                  <div class="progress-bg">
+                    <div class="progress" style="width: 45%;"></div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="progress-wrapper">
+                    <p class="progress-label">C#, ASP.NET, MVC</p>
+
+                    <data class="progress-value" value="45">45%</data>
+                  </div>
+
+                  <div class="progress-bg">
+                    <div class="progress" style="width: 45%;"></div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="progress-wrapper">
+                    <p class="progress-label">SQL</p>
+
+                    <data class="progress-value" value="45">45%</data>
+                  </div>
+
+                  <div class="progress-bg">
+                    <div class="progress" style="width: 45%;"></div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="progress-wrapper">
+                    <p class="progress-label">Github</p>
+
+                    <data class="progress-value" value="65">65%</data>
+                  </div>
+
+                  <div class="progress-bg">
+                    <div class="progress" style="width: 65%;"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="progress-wrapper">
+                    <p class="progress-label">Testing, Debugging</p>
+
+                    <data class="progress-value" value="75">75%</data>
+                  </div>
+
+                  <div class="progress-bg">
+                    <div class="progress" style="width: 75%;"></div>
+                  </div>
+                </li>
+                
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PORTFOLIO
+      -->
+
+      <!-- <section class="section portfolio" aria-labelledby="portfolio-label" id="portfolio">
+
+        <div class="title-wrapper container">
+
+          <div>
+            <p class="section-subtitle" id="portfolio-label">My Projects</p>
+
+            <h2 class="h2 section-title">Portfolio</h2>
+          </div>
+
+          <p class="section-text">
+            Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly
+            described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work
+            with different technologies, and manage projects effectively.
+          </p>
+
+        </div>
+
+        <div class="slider" data-slider>
+          <div class="slider-controls left">    
+            <button class="slider-control prev" data-slider-prev aria-label="Slide to previous item">
+              <div class="line"></div>
+              <div class="arrow"></div>
+            </button>
+          </div>
+            
+          <ul class="slider-container" data-slider-container>
+
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/portfolio-1.png" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">3D portfolio</h3>
+
+                  <p class="card-text" style="color: var(--roman-silver)">#react &nbsp; #tailwind &nbsp; #vite &nbsp; #3d &nbsp;  #threeJs  &nbsp; #gltf</p>
+
+                </div>
+
+                <a href="https://shams-rzayeva.vercel.app/" target="_blank" class="layer-link"></a>
+
+                <div class="links">
+                  <a href="https://github.com/shamsrza/portfolio-shams-2024" target="_blank" class="layer-link"></a>     
+                </div>
+
+              </div>
+            </li>
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/ping_2.png" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Ping</h3>
+                  <p class="card-text">Real Time Chat Application</p>
+                  <p class="card-text" style="color: var(--roman-silver)">#mern &nbsp; #socket.io &nbsp; #daisyui &nbsp; #zustand &nbsp;</p>
+                  <p class="card-text" style="color: var(--roman-silver)">#lucide-react &nbsp; #react-hot-toast &nbsp; #cloudinary &nbsp;</p>
+
+                </div>
+                <a href="https://ping-fullstack-chat-app.onrender.com/" target="_blank" class="layer-link"></a>
+
+                <div class="links">
+                  <a href="https://github.com/shamsrza/ping-fullstack-chat-app" target="_blank" class="layer-link"></a>     
+                </div>
+              </div>
+            </li>
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/portfolio-2.png" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">SocialX</h3>
+                  <p class="card-text" style="color: var(--roman-silver)">#react &nbsp;  #react-router-dom &nbsp; #aos</p>
+                </div>
+                <a href="https://socialx-react.vercel.app/" target="_blank" class="layer-link"></a>
+
+                <div class="links">
+                  <a href="https://github.com/shamsrza/socialx_react_app" target="_blank" class="layer-link"></a>     
+                </div>
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/portfolio-2.png" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">SocialX</h3>
+                  <p class="card-text" style="color: var(--roman-silver)">#react &nbsp;  #react-router-dom &nbsp; #aos</p>
+                </div>
+                <a href="https://socialx-react.vercel.app/" target="_blank" class="layer-link"></a>
+
+                <div class="links">
+                  <a href="https://github.com/shamsrza/socialx_react_app" target="_blank" class="layer-link"></a>     
+                </div>
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/portfolio-2.png" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">SocialX</h3>
+                  <p class="card-text" style="color: var(--roman-silver)">#react &nbsp;  #react-router-dom &nbsp; #aos</p>
+                </div>
+                <a href="https://socialx-react.vercel.app/" target="_blank" class="layer-link"></a>
+
+                <div class="links">
+                  <a href="https://github.com/shamsrza/socialx_react_app" target="_blank" class="layer-link"></a>     
+                </div>
+              </div>
+            </li>
+          </ul> 
+          <div class="slider-controls right">
+            <button class="slider-control next" data-slider-next aria-label="Slide to next item">
+              <div class="line"></div>
+              <div class="arrow"></div>
+            </button>
+          </div>
+
+        </div>
+
+
+      </section> -->
+
+
+      <section class="section portfolio" aria-labelledby="portfolio-label" id="portfolio">
+        <div class="container">
+          <div>
+            <p class="section-subtitle" id="portfolio-label">My Projects</p>
+
+            <h2 class="h2 section-title">Portfolio</h2>
+          </div>
+
+          <p class="section-text">
+            Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly
+            described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work
+            with different technologies, and manage projects effectively.
+          </p>
+          <div class="block">
+            <div id="demo">
+              <!-- project - one -->
+              <div class="item" id="item-1">
+                <img src="/assets/images/ping_7.png">
+                <div class="item__content" id="project-one-txt">
+                  <h3 class="h3 card-title">Ping</h3>
+                  <span class="item__content-title">Real Time Chat App</span>
+                  <span class="item__content-subtitle">#mern &nbsp; #socket.io &nbsp; #daisyui &nbsp;</span>
+                  <span class="item__content-subtitle">#zustand &nbsp; #lucide-react &nbsp; #cloudinary</span>
+                  <span class="item__content-subtitle">#react-hot-toast &nbsp;</span>
+                </div>
+                  <div class="project-banner-overlay">
+                    <a href="https://github.com/shamsrza/ping-fullstack-chat-app" target="_blank" class="source-code" id="sc-1"></a>
+                    <a href="https://ping-fullstack-chat-app.onrender.com/" target="_blank" class="live-btn" id="lb-1"></a>
+                  </div>
+              </div>
+
+              <!-- project - two -->
+              <div class="item" id="item-2">
+                <img src="/assets/images/portfolio-1.png">
+                <div class="item__content" id="project-two-txt">
+                  <h3 class="h3 card-title">3D portfolio</h3>
+                  <span class="item__content-title">Developer portfolio with 3D graphics</span>
+                  <span class="item__content-subtitle">#react &nbsp; #threejs &nbsp; #vite</span>
+                  <span class="item__content-subtitle">#3d &nbsp;  #tailwind  &nbsp; #gltf</span>
+                </div>
+                <div class="project-banner-overlay">
+                  <a href="https://github.com/shamsrza/portfolio-shams-2024" target="_blank" class="source-code" id="sc-2"></a>
+                  <a href="https://shams-rzayeva.vercel.app/" target="_blank" class="live-btn" id="lb-2"></a>
+                </div>
+              </div>
+
+
+              <!-- project - three -->
+              <div class="item" id="item-3">
+                <img src="/assets/images/portfolio-2.png" >
+                <div class="item__content" id="project-three-txt">
+                  <h3 class="h3 card-title">SocialX</h3>
+                  <span class="item__content-title">Landing page for mobile services</span>
+                  <span class="item__content-subtitle">#react &nbsp; #react-router-dom &nbsp; #aos</span>
+                </div>
+                <div class="project-banner-overlay">
+                  <a href="https://github.com/shamsrza/socialx_react_app" target="_blank" class="source-code" id="sc-3"></a>
+                  <a href="https://socialx-react.vercel.app/" target="_blank" class="live-btn" id="lb-3"></a>
+                </div>
+              </div>
+
+              <!-- project - four -->
+              <div class="item" id="item-4">
+                <img src="https://images.unsplash.com/photo-1503044600630-60c01a3ef702?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2af2de59a223d12b162c3a1f887659c4&auto=format&fit=crop&w=1500&q=80" >
+                <div class="item__content" id="project-four-txt">
+                  <h3 class="h3 card-title">Project #4</h3>
+                  <!-- <span class="item__content-title">Landing page for mobile services</span> -->
+                  <!-- <span class="item__content-subtitle">#react &nbsp; #react-router-dom &nbsp; #aos</span> -->
+                </div>
+                <div class="project-banner-overlay">
+                  <a href="https://github.com/shamsrza/socialx_react_app" target="_blank" class="source-code" id="sc-4"></a>
+                  <a href="https://socialx-react.vercel.app/" target="_blank" class="live-btn" id="lb-4"></a>
+                </div>
+              </div>
+
+              <!-- project - five -->
+              <div class="item" id="item-5">
+                <img src="https://images.unsplash.com/photo-1503044600630-60c01a3ef702?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2af2de59a223d12b162c3a1f887659c4&auto=format&fit=crop&w=1500&q=80" >
+                <div class="item_git _content" id="project-five-txt">
+                  <h3 class="h3 card-title">Project #5</h3>
+                  <!-- <span class="item__content-title">Landing page for mobile services</span> -->
+                  <!-- <span class="item__content-subtitle">#react &nbsp; #react-router-dom &nbsp; #aos</span> -->
+                </div>
+                <div class="project-banner-overlay">
+                  <a href="https://github.com/shamsrza/socialx_react_app" target="_blank" class="source-code" id="sc-5"></a>
+                  <a href="https://socialx-react.vercel.app/" target="_blank" class="live-btn" id="lb-5"></a>
+                </div>
+              </div>
+
+              <!-- project - six -->
+              <div class="item" id="item-6">
+                <img src="https://images.unsplash.com/photo-1503044600630-60c01a3ef702?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2af2de59a223d12b162c3a1f887659c4&auto=format&fit=crop&w=1500&q=80" >
+                <div class="item__content" id="project-six-txt">
+                  <h3 class="h3 card-title">Project #6</h3>
+                  <!-- <span class="item__content-title">Landing page for mobile services</span> -->
+                  <!-- <span class="item__content-subtitle">#react &nbsp; #react-router-dom &nbsp; #aos</span> -->
+                </div>
+                <div class="project-banner-overlay">
+                  <a href="https://github.com/shamsrza/socialx_react_app" target="_blank" class="source-code" id="sc-6"></a>
+                  <a href="https://socialx-react.vercel.app/" target="_blank" class="live-btn" id="lb-6"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </section>
+      <!-- 
+        - #BLOG
+      -->
+
+      <!-- <section class="section blog" aria-labelledby="blog-label">
+        <div class="container">
+
+          <p class="section-subtitle" id="blog-label">Recent Articles</p>
+
+          <h2 class="h2 section-title">Latest News</h2>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 700; --height: 470;">
+                  <img src="./assets/images/blog-1.jpg" width="700" height="470" loading="lazy"
+                    alt="Get Started With Tiktok Ads." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <time class="time" datetime="2022-06-24">
+                    <span class="span text-lg">24</span>
+                    June 2022
+                  </time>
+
+                  <div>
+                    <h3 class="h3 card-title">Get Started With Tiktok Ads.</h3>
+
+                    <p class="card-text">
+                      Phasellus et lacus suscipit congue nis in the miss mine one miss the drana risus in tincidunt
+                      ornare.
+                    </p>
+
+                    <a href="#" class="btn has-before">
+                      <span class="span">Read more</span>
+
+                      <ion-icon name="arrow-forward"></ion-icon>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 700; --height: 470;">
+                  <img src="./assets/images/blog-2.jpg" width="700" height="470" loading="lazy"
+                    alt="UX in Ecommerce – 5 things to avoid." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <time class="time" datetime="2022-06-27">
+                    <span class="span text-lg">27</span>
+                    June 2022
+                  </time>
+
+                  <div>
+                    <h3 class="h3 card-title">UX in Ecommerce – 5 things to avoid.</h3>
+
+                    <p class="card-text">
+                      Phasellus et lacus suscipit congue nis in the miss mine one miss the drana risus in tincidunt
+                      ornare.
+                    </p>
+
+                    <a href="#" class="btn has-before">
+                      <span class="span">Read more</span>
+
+                      <ion-icon name="arrow-forward"></ion-icon>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section> -->
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="footer">
+    <div class="container">
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Get in touch</p>
+        </li>
+
+        <li>
+          <a href="mailto:rzsams@hotmail.com" class="footer-link">rzsams@hotmail.com</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Locations</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Poland — Europe</a>
+        </li>
+
+      </ul>
+
+      <ul class="social-list">
+
+        <li>
+          <a href="https://github.com/shamsrza" target="_blank" class="social-link">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/in/shams-rzayeva/" target="_blank" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.instagram.com/shemsrza/" target="_blank" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+
+  <script src="./assets/js/carousel.js"></script>
+
+  <script src="./assets/js/script.js"></script>
+
+
+
+  <!-- 
+    - ionicon link
+  -->
+ 
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
